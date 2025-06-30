@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADR Electrical & Automation</title>
+  <link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">ADR Electrical & Automation</a>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME Section -->
+  <section id="home" class="section home-section">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="videos/home-background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="home-content">
+      <h1>Your Reliable Partner For Automation & IoT</h1>
+      <p>We deliver smart, efficient, and future-ready solutions to power industries, homes, and infrastructure with innovation and precision.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY, EXPERTISE, ABOUT, CONTACT, FOOTER -->
+  <!-- Keep your original sections exactly as in index.html -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-contact">
+      <h4>Contact Info</h4>
+      <p><strong>Address:</strong> 1256 chirori road banthla loni ghazabad (Uttar Pradesh) 201102</p>
+      <p><strong>Phone:</strong> 91-7983913400, 91-6397832424</p>
+      <p><strong>Email:</strong> ADRELECTRICALAUTOMATION@GMAIL.COM</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ADR Electrical & Automation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
